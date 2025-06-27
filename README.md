@@ -29,7 +29,7 @@ Taskure is a modern, beautiful **To-Do List App** with real-time clock, calendar
 
 > _Taskure UI preview_
 
-![Taskure Preview](./public/Taskure-ss.jpg) 
+![Taskure Preview](./Taskure-ss.jpg) 
 
 ---
 
