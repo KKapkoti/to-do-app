@@ -1,0 +1,19 @@
+
+/* Calendar */
+.react-calendar {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1rem;
+  border: none;
+  color: #333;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.calendar-container {
+  padding: 20px;
+  text-align: center;
+  color: #2e2e3a;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}

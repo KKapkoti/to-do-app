@@ -1,7 +1,11 @@
 //src/App.js
 import { useEffect, useState } from "react";
 import TodoItem from "./components/TodoItem";
+import Clock from "./components/Clock";
+import CalendarBox from "./components/CalendarBox";
+
 const API_BASE= 'http://localhost:4000/to-do-app';
+
 
 
 function App() {
@@ -81,17 +85,28 @@ const updateTodo = async (id, updatedData) => {
 
   return (
     <div className="container">
-      <div className="heading">
-        <h1>MernTodoList</h1>
+      <div className="glass-heading">
+        <h1>Taskure - Your Daily Task Cure</h1>
+        <div className="glass main-content">
+      {/* Left Panel */}
+      <div className="left-panel">
+        <div className="glass clock-box">
+          <Clock />
+        </div>
+        <div className="glass calendar-box">
+          <CalendarBox />
+        </div>      
       </div>
 
-      <div className="form">
-        <input type='text' value={input} onChange={handleChange}></input>
-        <button onClick={addItem}>
-          <span>ADD</span>
-        </button>
-      </div>
+      {/* Right Panel */}
+      <div className="right-panel glass">
+        <div className="form-box">
+          <input type="text" value={input} onChange={handleChange} placeholder="Write here anything..." />
+          <button onClick={addItem}>Add to list</button>
+        </div>
 
+        <div className="todolist-box">
+          <h3 className="todo-heading">Todo List 🗒️</h3>
       <div className="todolist">  
       {items.map((item)=> {
         const {_id, name, completed} = item;
@@ -108,8 +123,13 @@ const updateTodo = async (id, updatedData) => {
       })}
       </div>
     </div>
+    </div>
+    </div>
+    </div>
+    </div>
   );
-}
+};
+
 
 export default App;
 
