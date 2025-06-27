@@ -74,7 +74,7 @@ git clone https://github.com/KKapkoti/to-do-app.git
 cd taskure
 ````
 
-### 1️⃣ Setup Backend
+### 1️ Setup Backend
 
 ```bash
 cd server
@@ -84,7 +84,7 @@ npm start
 
 By default, backend runs on `http://localhost:4000`
 
-### 2️⃣ Setup Frontend
+### 2️ Setup Frontend
 
 ```bash
 cd client
@@ -96,7 +96,7 @@ Frontend runs on `http://localhost:3000` (or default port)
 
 ---
 
-## 📬 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint                | Description       |
 | ------ | ----------------------- | ----------------- |
